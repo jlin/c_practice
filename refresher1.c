@@ -1,6 +1,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <math.h>
 
 #define GET_NAME(var) printf("%s = %d\n", #var, var)
 
@@ -15,8 +16,11 @@ int main()
 	extern float z;
 
 	uint8_t i = 10;
+    long int j = 0L;
+    int32_t k = 0L;
 
 	GET_NAME(i);
+    GET_NAME(k);
     scope_example();
 
 	return 0;
@@ -48,3 +52,4 @@ void scope_example()
     }
     printf ("external num = %d\n", num);
 }
+
