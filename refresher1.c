@@ -5,6 +5,8 @@
 #define GET_NAME(var) printf("%s = %d\n", #var, var)
 
 void scope_example();
+int swap(int a, int b);
+void f1();
 
 int main()
 {
